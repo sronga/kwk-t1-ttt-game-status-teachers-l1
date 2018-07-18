@@ -38,4 +38,5 @@ end
 def full?(board)
   board.all? do |eachposition|
     eachposition != " "
+  end
 end
