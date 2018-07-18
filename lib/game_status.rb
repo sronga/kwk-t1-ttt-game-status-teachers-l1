@@ -27,7 +27,7 @@ def won(board)
   playerposition2 = board[position2]
   playerposition3 = board[position3]
 
-  puts position1, position2, position3
+  puts position1
 
   if playerposition1 == "X" && playerposition2 == "X" && playerposition3 == "X"
     WIN_COMBINATIONS[winindex]
