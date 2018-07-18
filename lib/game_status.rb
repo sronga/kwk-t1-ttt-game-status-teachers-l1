@@ -16,7 +16,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  index = 0
+
+  for WIN_COMBINATIONS.each do |index|
+
   position1 = WIN_COMBINATIONS[index][0]
   position2 = WIN_COMBINATIONS[index][1]
   position3 = WIN_COMBINATIONS[index][2]
@@ -24,4 +26,11 @@ def won?(board)
   playerposition1 = board[position1]
   playerposition2 = board[position2]
   playerposition3 = board[position3]
+
+  if (playerposition1 == "X" && playerposition2 == "X" && playerposition3 == "X")
+    WIN_COMBINATIONS[index]
+  elsif (playerposition1 == "O" && playerposition2 == "O" && playerposition3 == "O")
+    WIN_COMBINATIONS[index]
+  else nil
+
 end
