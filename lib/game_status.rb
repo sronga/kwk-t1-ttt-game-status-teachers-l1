@@ -28,10 +28,10 @@ def won?(board)
   playerposition3 = board[position3]
 
   if playerposition1 == "X" && playerposition2 == "X" && playerposition3 == "X"
-    winindex
+    return winindex
   elsif playerposition1 == "O" && playerposition2 == "O" && playerposition3 == "O"
-    winindex
-  else false
+    return winindex
+  else return false
 
   end
   end
