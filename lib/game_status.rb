@@ -27,9 +27,7 @@ def won?(board)
   playerposition2 = board[position2]
   playerposition3 = board[position3]
 
-  if (playerposition1 == "X" && playerposition2 == "X" && playerposition3 == "X")
-    ||
-    (playerposition1 == "O" && playerposition2 == "O" && playerposition3 == "O")
+  if (playerposition1 == "X" && playerposition2 == "X" && playerposition3 == "X") || (playerposition1 == "O" && playerposition2 == "O" && playerposition3 == "O")
     return winindex
   end
   end
