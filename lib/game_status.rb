@@ -29,10 +29,8 @@ def won?(board)
 
   if playerposition1 == "X" && playerposition2 == "X" && playerposition3 == "X"
     return winindex
-  elsif playerposition1 == "O" && playerposition2 == "O" && playerposition3 == "O"
-    return winindex
-  else return false
+  end
+  end
 
-  end
-  end
+  return false
 end
