@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 
 def won(board)
 
-winindex = 0
+  winindex = 0
 
   position1 = WIN_COMBINATIONS[winindex][0]
   position2 = WIN_COMBINATIONS[winindex][1]
@@ -26,6 +26,8 @@ winindex = 0
   playerposition1 = board[position1]
   playerposition2 = board[position2]
   playerposition3 = board[position3]
+
+  puts position1, position2, position3
 
   if playerposition1 == "X" && playerposition2 == "X" && playerposition3 == "X"
     WIN_COMBINATIONS[winindex]
