@@ -31,9 +31,9 @@ def won(board)
 
 
   if playerposition1 == "X" && playerposition2 == "X" && playerposition3 == "X"
-    WIN_COMBINATIONS[winindex]
+    "X"
   elsif playerposition1 == "O" && playerposition2 == "O" && playerposition3 == "O"
-    WIN_COMBINATIONS[winindex]
+    "O"
   else false
   end
 end
