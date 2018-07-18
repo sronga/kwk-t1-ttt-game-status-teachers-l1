@@ -65,3 +65,5 @@ def winner(board)
   else return nil
   end
 end
+
+puts won?(board)[0]
