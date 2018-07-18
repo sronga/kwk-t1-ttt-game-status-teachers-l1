@@ -40,3 +40,17 @@ def full?(board)
     eachposition != " "
   end
 end
+
+def draw?(board)
+  if full?(board) == false
+    return false
+  elsif full?(board) == true
+    (
+    if won?(board) == true 
+      return true
+    elsif won?(board) == false
+      return false
+    end      
+    )
+  end   
+end
