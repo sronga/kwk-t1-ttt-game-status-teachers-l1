@@ -17,17 +17,16 @@ WIN_COMBINATIONS = [
 
 def won(board)
 
-  winindex = 0
+  WIN_COMBINATIONS.each do |index|
 
-  position1 = WIN_COMBINATIONS[winindex][0]
-  position2 = WIN_COMBINATIONS[winindex][1]
-  position3 = WIN_COMBINATIONS[winindex][2]
+  position1 = WIN_COMBINATIONS[0]
+  position2 = WIN_COMBINATIONS[1]
+  position3 = WIN_COMBINATIONS[2]
 
   playerposition1 = board[position1]
   playerposition2 = board[position2]
   playerposition3 = board[position3]
 
-  puts position1
 
   if playerposition1 == "X" && playerposition2 == "X" && playerposition3 == "X"
     WIN_COMBINATIONS[winindex]
