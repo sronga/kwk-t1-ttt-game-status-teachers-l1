@@ -16,5 +16,12 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  
+  index = 0
+  position1 = WIN_COMBINATIONS[index][0]
+  position2 = WIN_COMBINATIONS[index][1]
+  position3 = WIN_COMBINATIONS[index][2]
+
+  playerposition1 = board[position1]
+  playerposition2 = board[position2]
+  playerposition3 = board[position3]
 end
