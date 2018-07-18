@@ -27,13 +27,11 @@ def won(board)
   playerposition2 = board[position2]
   playerposition3 = board[position3]
 
-  end
-
-
   if playerposition1 == "X" && playerposition2 == "X" && playerposition3 == "X"
     "X"
   elsif playerposition1 == "O" && playerposition2 == "O" && playerposition3 == "O"
     "O"
   else false
+  end
   end
 end
