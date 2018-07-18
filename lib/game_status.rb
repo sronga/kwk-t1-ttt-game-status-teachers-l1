@@ -19,6 +19,7 @@ def won(board)
 
   WIN_COMBINATIONS.each do |winindex|
 
+    puts winindex
   position1 = winindex[0]
   position2 = winindex[1]
   position3 = winindex[2]
