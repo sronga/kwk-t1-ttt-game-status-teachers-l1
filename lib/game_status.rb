@@ -17,21 +17,21 @@ WIN_COMBINATIONS = [
 
 def won?(board)
 
-  for WIN_COMBINATIONS.each do |index|
+  for WIN_COMBINATIONS.each do |winindex|
 
-  position1 = WIN_COMBINATIONS[index][0]
-  position2 = WIN_COMBINATIONS[index][1]
-  position3 = WIN_COMBINATIONS[index][2]
+  position1 = WIN_COMBINATIONS[winindex][0]
+  position2 = WIN_COMBINATIONS[winindex][1]
+  position3 = WIN_COMBINATIONS[winindex][2]
 
   playerposition1 = board[position1]
   playerposition2 = board[position2]
   playerposition3 = board[position3]
 
   if (playerposition1 == "X" && playerposition2 == "X" && playerposition3 == "X")
-    WIN_COMBINATIONS[index]
+    WIN_COMBINATIONS[winindex]
   elsif (playerposition1 == "O" && playerposition2 == "O" && playerposition3 == "O")
-    WIN_COMBINATIONS[index]
+    WIN_COMBINATIONS[winindex]
   else nil
-  end
+
   end
 end
