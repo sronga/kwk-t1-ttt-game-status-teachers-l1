@@ -14,12 +14,10 @@ WIN_COMBINATIONS = [
   [1,4,7],
   [2,5,8]
 ]
-
+puts "hi"
 def won(board)
 
   WIN_COMBINATIONS.each do |winindex|
-
-  puts "Hi this is the #{winindex}"
 
   position1 = winindex[0]
   position2 = winindex[1]
