@@ -34,3 +34,8 @@ def won?(board)
 
   return false
 end
+
+def full?(board)
+  board.all? do |eachposition|
+    eachposition != " "
+end
