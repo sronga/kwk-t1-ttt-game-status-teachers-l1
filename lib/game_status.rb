@@ -58,3 +58,9 @@ end
 def over?(board)
 return (draw?(board) || full?(board) || won?(board))
 end
+
+def winner(board)
+  if won?(board)
+    return won?(board)[0]
+  else return nil
+end
