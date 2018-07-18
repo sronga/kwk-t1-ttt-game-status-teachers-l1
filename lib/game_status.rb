@@ -16,6 +16,15 @@ WIN_COMBINATIONS = [
 ]
 
 def won(board)
+  for WIN_COMBINATIONS.each do |winindex|
 
-  
+  position1 = WIN_COMBINATIONS[winindex][0]
+  position2 = WIN_COMBINATIONS[winindex][1]
+  position3 = WIN_COMBINATIONS[winindex][2]
+
+  playerposition1 = board[position1]
+  playerposition2 = board[position2]
+  playerposition3 = board[position3]
+
+  end
 end
