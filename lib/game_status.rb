@@ -33,6 +33,6 @@ def won(board)
     WIN_COMBINATIONS[winindex]
   elsif playerposition1 == "O" && playerposition2 == "O" && playerposition3 == "O"
     WIN_COMBINATIONS[winindex]
-  else nil
+  else false
   end
 end
